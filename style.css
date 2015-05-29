@@ -1,0 +1,738 @@
+/*************************************
+**************************************
+reset.css
+
+zero out browser default styles.
+(based on the standard Meyers reset).
+**************************************
+*************************************/
+/*reset*/
+html, body, div, span, applet, object, iframe,
+h1, h2, h3, h4, h5, h6, p, blockquote,
+a, abbr, acronym, address, big, cite,
+del, dfn, em, font, img, ins, kbd, q, s, samp,
+small, strike, strong, sub, tt,
+var,
+dl, dt, dd, ol, ul, li,
+fieldset, form, label, legend,
+table, caption, tbody, tfoot, thead, tr, th, td {
+    margin: 0;
+    padding: 0;
+    border: 0;
+    outline: 0;
+    font - weight: inherit;
+    font - style: inherit;
+    font - size: 100 % ;
+    font - family: inherit;
+    vertical - align: baseline;
+}: focus {
+    outline: 0;
+}
+body {
+    line - height: 1;
+    color: black;
+    background: white;
+}
+ol, ul {
+    list - style: none;
+}
+table {
+    border - collapse: separate;
+    border - spacing: 0;
+}
+/*__________________________________________icomoon styles*/
+@
+font - face {
+    font - family: 'icomoon';
+    src: url('fonts/icomoon.eot?8djaxy');
+    src: url('fonts/icomoon.eot?#iefix8djaxy') format('embedded-opentype'),
+        url('fonts/icomoon.woff?8djaxy') format('woff'),
+        url('fonts/icomoon.ttf?8djaxy') format('truetype'),
+        url('fonts/icomoon.svg?8djaxy#icomoon') format('svg');
+    font - weight: normal;
+    font - style: normal;
+}
+
+[class ^= "icon-"], [class *= " icon-"] {
+    font - family: 'icomoon';
+    speak: none;
+    font - style: normal;
+    font - weight: normal;
+    font - variant: normal;
+    text - transform: none;
+    line - height: 1;
+    font - size: 26 px;
+    text - shadow: 0 px - 1 px 1 px #777;
+	  margin: 2% 1%;
+	  text-decoration: none;
+	  cursor: pointer;
+	  color: # cfdbd5;
+
+    /* Better Font Rendering =========== */
+    - webkit - font - smoothing: antialiased; - moz - osx - font - smoothing: grayscale;
+}
+
+[class ^= "icon-"]: hover, [class *= " icon-"]: hover {
+    color: #74f4b6;
+}
+
+.icon-menu:before {
+	content: "\e9bd";
+}
+.icon-plus:before {
+	content: "\ea0a";
+}
+.icon-minus:before {
+	content: "\ea0b";
+}
+.icon-mail2:before {
+	content: "\ea84";
+}
+.icon-facebook:before {
+	content: "\ea8c";
+}
+.icon-instagram:before {
+	content: "\ea90";
+}
+.icon-twitter:before {
+	content: "\ea91";
+}
+.icon-github4:before {
+	content: "\eab4";
+}
+.icon-linkedin2:before {
+	content: "\eac9";
+}
+
+.social [class^= "icon-"], .social[class *= " icon-"] {
+        font - size: 42 px;
+        margin: 4 % 6 % ;
+        line - height: 1.6;
+    }
+    /*__________________________________________global Styles*/
+h1 {
+    font - size: 62 px;
+}
+h2 {
+    font - size: 48 px;
+}
+
+body {
+    font - family: 'Advent Pro'; - webkit - font - smoothing: antialiased;
+    text - rendering: geometricPrecision;
+    line - height: 1.5;
+}
+
+.site {
+    display: flex;
+    min - height: 100 vh;
+    flex - direction: column;
+}
+
+.siteContent {
+    flex: 1;
+    display: block;
+    box - sizing: border - box;
+    margin - bottom: 2 % ;
+}
+/*__________________________________________header Styles*/
+.hero {
+    background: #fff url('http://testing.zippetomylou.com/new/img/hero-lights.jpg') center center no - repeat;
+    background - size: 100 % ;
+    background - size: cover;
+    clear: both;
+    width: 100 % ;
+    min - height: 40e m;
+    position: relative;
+    filter: progid: DXImageTransform.Microsoft.AlphaImageLoader(src = 'http://testing.zippetomylou.com/new/img/hero-lights.jpg', sizingMethod = 'scale');
+}
+
+.mainHead {
+    font - family: 'Amatic SC';
+    font - size: 62 px;
+    color: #69626d;
+    text-shadow: 0px 1px 0px # fff;
+    float: left;
+    line - height: 1.3;
+}
+
+.brandBar {
+    float: left;
+    position: fixed;
+    width: 98 % ;
+    padding: 1 % ;
+    background: #fff;
+    border - bottom: solid 6 px #74f4b6;
+	z-index: 9999;
+	box-shadow: 0 1px 4px rgba(0,0,0,0.15);
+}
+
+.logo {
+	width: 2%;
+	margin-right: 1%;
+	float: left;
+	background: # FFF8EA;
+    border - radius: 100 % ;
+    padding: 4 px 2 % 0 2 % ;
+    border: solid 6 px #69626D;
+}
+
+.logo img {width: 100%;}
+
+.inner {
+	max-width: 1300px;
+	width: 100%;
+	margin: 0 auto;
+}
+
+.mainNav {
+    float: right;
+    display: block;
+    margin-top: 2%;
+    line-height: 1.5;
+}
+
+.icon-menu {display: none;}
+
+.mainNav ul {display: flex;list-style: none;display: -webkit-flex;}
+
+.mainNav ul li a{
+    font-family: 'Amatic SC';
+    color: # 69626 D;
+    font - size: 32 px;
+    padding: 0 % 5 % ;
+    cursor: pointer;
+    display: inline - table;
+    text - decoration: none;
+}
+
+.mainNav ul li a: hover {
+    color: #74f4b6;
+	background: # 69626 D;
+}
+
+.heroBtn {
+    vertical - align: middle;
+    bottom: 20 % ;
+    position: absolute;
+    text - align: center;
+    background: #74F4B6;
+    color: # 69626 D;
+    font - size: 28 px;
+    padding: 1 % 3 % ;
+    font - family: 'Amatic SC';
+    font - weight: 600;
+    text - shadow: 0 px 1 px 0 px# f9f9f9;
+    border - radius: 2 px;
+    cursor: pointer;
+    display: flex;
+    left: 6 % ;
+}
+
+.tag {
+    font - size: 78 px;
+    font - family: 'Amatic SC';
+    position: absolute;
+    top: 38 % ;
+    left: 4 % ;
+    color: #fff;
+}
+
+/*__________________________________________content Styles*/
+.content {
+    max - width: 1300 px;
+    width: 80 % ;
+    margin: 5 % 10 % ;
+    text - align: center;
+    font - family: 'Advent Pro';
+    font - size: 22 px;
+    color: #69626D;
+	position: relative;
+}
+
+.content p {
+	margin-bottom: 2%;
+}
+
+.contentBtn {
+    vertical-align: middle;
+    text-align: center;
+    font-size: 28px;
+    padding: 1% 3%;
+    font-family: 'Amatic SC';
+    font-weight: 600;
+    text-shadow: 0px 1px 0px # f9f9f9;
+    border - radius: 2 px;
+    cursor: pointer;
+    max - width: 20 % ;
+    margin: 0 auto;
+}
+
+.contentBtn: hover {
+    text - shadow: 0 px 1 px 0 px #444;}
+
+# purpleBtn, #greenBtn: hover {
+        background: #69626D;color: # 74 F4B6;
+    }
+
+    #
+    greenBtn, #grayBtn: hover {
+        background: #74F4B6;color: # 69626 D;
+    }
+
+    #
+    grayBtn, #purpleBtn: hover {
+        background: #cfdbd5;color: #69626D;}
+
+
+.contentTitle {
+    font-family: 'Amatic SC';
+    font-size: 62px;
+    color: # 69626 D;
+        text - align: center;
+    }
+
+    .about {
+        float: left;
+        width: 100 % ;
+        background: #fff;
+        position: relative;
+    }
+
+
+    /*__________________________________________footer Styles*/
+    .siteFooter {
+        -webkit - box - flex: 0; - webkit - flex: none; - ms - flex: none;
+        flex: none;
+        background: #74F4B6;
+	border-top: solid 6px # 69626 D;
+        float: left;
+        width: 100 % ;
+    }
+
+    .footer {
+        padding: 5 % 0;
+        color: #999;
+    font-size: 20px;
+    text-align: center
+}
+
+.copyright {
+	width: 100%;
+	float: left;
+	text-align: center;
+	color: # 69626 D;
+        padding: 2 % 0;
+    }
+    /*__________________________________________flexbox Styles*/
+    .flexBoxWrap {
+        text - align: center;
+        overflow: hidden;
+        color: #fff;
+        box - sizing: border - box;
+        background - color: #69626D;
+	position: relative;
+	border-top: solid 10px # fff;
+        min - height: 30e m;
+    }
+
+    .flexBox {
+        position: absolute;
+        width: 33 % ;
+        overflow: hidden;
+        cursor: pointer;
+        transition: all.6 s cubic - bezier(0.23, 1, 0.32, 1); - webkit - transition: all 0.6 s cubic - bezier(0.23, 1, 0.32, 1);
+        padding - left: .3333 % ;
+        min - height: 30e m;
+    }
+
+    .flexBox: nth - child(1) {
+        background: #74f4b6;
+}
+
+.flexBox:nth-child(2){
+	background: # cfdbd5;
+        left: 33.3 % ;
+    }
+
+    .flexBox: nth - child(3) {
+        background: #69626d;
+	left: 66.6%;
+}
+
+.flexBox:nth-child(2) p,
+.flexBox:nth-child(1) p,
+.flexBox:nth-child(3) p {
+    width: 60%;
+    margin: 0% auto 4% auto;
+    font-size: 26px;
+    color: # fff;
+    }
+
+    .flexBox: nth - child(4) {
+        background: #3c362a;
+	left: 60vw;
+}
+
+.flexBox:nth-child(5){
+	background: # 44 ccff;
+        left: 80 vw;
+    }
+
+    .flexBoxContent {
+        animation - duration: 1 s;
+        animation - timing - function: cubic - bezier(0.23, 1, 0.32, 1);
+        animation - fill - mode: both; - webkit - animation - duration: 1 s; - webkit - animation - timing - function: cubic - bezier(0.23, 1, 0.32, 1); - webkit - animation - fill - mode: both;
+        display: flex;
+        display: -webkit - flex;
+        align - items: center; - webkit - align - items: center;
+        justify - content: center; - webkit - justify - content: center;
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100 % ;
+        height: 100 % ;
+        text - decoration: none;
+    }
+
+    .flexBoxContent: hover: before {
+        transform: skew(-30 deg) scale(3) translate(0, 0); - webkit - transform: skew(-30 deg) scale(3) translate(0, 0); - moz - transform: skew(-30 deg) scale(3) translate(0, 0); - ms - transform: skew(-30 deg) scale(3) translate(0, 0);
+        opacity: 0.1;
+    }
+
+    .flexBoxContent: before {
+        content: "";
+        position: absolute;
+        z - index: 1;
+        top: 0;
+        left: 0;
+        width: 100 % ;
+        height: 100 % ;
+        background: #333;
+	opacity: 0.05;
+	transform-origin: center center;
+	-webkit-transform-origin: center center;
+	-moz-transform-origin: center center;
+	-ms-transform-origin: center center;
+	transform: skew(-30deg) scaleY(1) translate(0, 0);
+	-webkit-transform: skew(-30deg) scale(1) translate(0, 0);
+	-moz-transform: skew(-30deg) scale(1) translate(0, 0);
+	-ms-transform: skew(-30deg) scale(1) translate(0, 0);
+	transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fbInnerTxt {
+	position: absolute;
+	z-index: 5;
+	top: 50%;
+	left: 50%;
+	width: 70%;
+	transform: translate(-50%, -50%) scale(0.5);
+	opacity: 0;
+	transition: all .6s cubic-bezier(0.23, 1, 0.32, 1);
+}
+
+.fb_extended,
+.fb_extended .fbInnerTxt,
+.fb_extended .flexBoxContent {
+	width: 100%;
+	top: 0 !important;
+	left: 0 !important;
+	z-index: 3;
+	cursor: default;
+	opacity: 1;
+	transform: translate(0%, 0%) scale(1);
+}
+
+.fb_extended .flexBoxContent:before {display: none;}
+
+.show {opacity: 1 !important;}
+
+.fb_extended .fbTitle {
+	opacity: 0;
+}
+
+.fbTitle {
+	display: block;
+	margin: 0;
+	position: relative;
+	z-index: 2;
+	width: 100%;
+	font-size: 68px;
+	color: # fff;
+        transition: all.6 s cubic - bezier(0.23, 1, 0.32, 1);
+        font - family: 'Amatic SC';
+    }
+
+    .subTitle {
+        font - family: 'Amatic SC';
+        font - size: 72 px;
+        margin - top: 2 % ;
+    }
+
+    .fbClose {
+        position: absolute;
+        right: 2 vw;
+        top: 2 vw;
+        opacity: 0;
+        z - index: 10;
+        cursor: pointer;
+        transition - delay: 0.5 s;
+        transition: all.6 s cubic - bezier(0.23, 1, 0.32, 1);
+        border: solid 1 px #3B343F;
+    background: # 3 B343F;
+        border - radius: 100 % ;
+        padding: 10 px 8 px 4 px 8 px;
+        transform: rotate(45 deg); - webkit - transform: rotate(45 deg); - moz - transform: rotate(45 deg); - ms - transform: rotate(45 deg);
+    }
+
+    .fbClose.icon - plus {
+        color: #74F4B6;
+  font-size: 28px;
+}
+
+.ftItem {
+	float: left;
+	width: 14%;
+	padding: 1%;
+	background: # fff;
+        margin: 2 % ;
+    }
+
+    #
+    logo {
+        background: rgba(255, 255, 255, 0);
+        width: 19 % ;
+        padding: 2 % ;
+        margin: 2 % 1 % ;
+    }
+
+    .ftItem img {
+        width: 100 % ;
+    }
+
+    /*__________________________________________Socialsphere Styles*/
+    .expand - box {
+        position: fixed;
+        bottom: 0;
+        z - index: 9999;
+        color: #74f4b6;
+}
+
+.round-part{
+  position:absolute;
+  left:0;
+  bottom:0;
+  width:300px;
+  height:300px;
+  border-radius:50%;
+  background-color: # 69626 D; - moz - transform: scale(0.2); - webkit - transform: scale(0.2); - o - transform: scale(0.2); - ms - transform: scale(0.2);
+        transform: scale(0.2); - webkit - transform - origin: 0 % 100 % ; - moz - transform - origin: 0 % 100 % ; - o - transform - origin: 0 % 100 % ; - ms - transform - origin: 0 % 100 % ;
+        transform - origin: 0 % 100 % ; - webkit - transition: all 0.6 s ease - in -out; - moz - transition: all 0.6 s ease - in -out; - ms - transition: all 0.6 s ease - in -out; - o - transition: all 0.6 s ease - in -out;
+        transition: all 0.6 s ease - in -out;
+    }
+
+    .square - part {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 150 px;
+        height: 150 px;
+        background - color: #69626D;
+  -moz-transform: scale(0.2);
+-webkit-transform: scale(0.2);
+-o-transform: scale(0.2);
+-ms-transform: scale(0.2);
+transform: scale(0.2);
+-webkit-transform-origin: 0% 100%;
+-moz-transform-origin: 0% 100%;
+-o-transform-origin: 0% 100%;
+-ms-transform-origin: 0% 100%;
+transform-origin: 0% 100%;
+-webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.round-part .round-textbox{
+  width:100%;
+  height:100%;
+  position:relative;
+  color: # 74 f4b6;
+    }
+
+    .expanded {
+        -moz - transform: scale(1); - webkit - transform: scale(1); - o - transform: scale(1); - ms - transform: scale(1);
+        transform: scale(1); - webkit - transition: all 0.6 s ease - in -out; - moz - transition: all 0.6 s ease - in -out; - ms - transition: all 0.6 s ease - in -out; - o - transition: all 0.6 s ease - in -out;
+        transition: all 0.6 s ease - in -out;
+    }
+
+    .wrapper {
+        width: 100 % ;
+        height: 100 % ;
+        position: absolute;
+        text - align: center;
+        display: table;
+    }
+
+    .wrapper span {
+        display: inline - block;
+        vertical - align: middle;
+        line - height: normal;
+        display: table - cell;
+        max - width: 80 % ;
+        max - height: 80 % ;
+        overflow: hidden;
+        color: #74f4b6;
+  opacity:0;
+ -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.round-part.expanded .wrapper span{
+  opacity:1;
+      -webkit-transition: all 0.6s ease-in-out;
+-moz-transition: all 0.6s ease-in-out;
+-ms-transition: all 0.6s ease-in-out;
+-o-transition: all 0.6s ease-in-out;
+transition: all 0.6s ease-in-out;
+}
+
+.expand-button{
+    position: absolute;
+    bottom: 0px;
+    left: 17px;
+    z-index: 999;
+    font-size: 46px;
+    color: # 74 f4b6;
+        cursor: pointer;
+        font - weight: bold;
+        text - shadow: 0 px - 1 px 0 px #333;
+}
+
+.expand-button.clicked{
+ 	z-index:9999999999999;
+    -webkit-transition: all 0.6s ease-in-out;
+	-moz-transition: all 0.6s ease-in-out;
+	-ms-transition: all 0.6s ease-in-out;
+	-o-transition: all 0.6s ease-in-out;
+	transition: all 0.6s ease-in-out;
+	transform: rotate(315deg);
+	-webkit-transform: rotate(315deg);
+	-ms-transform: rotate(315deg);
+	-moz-transform: rotate(315deg);
+}
+
+.expand-button.doubleclicked {
+	-webkit-animation: rotateBack 1s 1 ease;
+	-moz-animation: rotateBack 1s 1 ease;
+	-o-animation: rotateBack 1s 1 ease;
+}
+
+.social {
+    top: 110px;
+    position: absolute;
+    left: 25px;
+}
+
+.socialTitle {
+    text-align: center;
+    font-size: 38px;
+    font-family: 'Amatic SC';
+    position: absolute;
+    top: 50px;
+    left: 85px;
+}
+
+@-webkit-keyframes rotateForward {
+from { -webkit-transform: rotate(0deg); }
+to { -webkit-transform: rotate(360deg); }
+}
+@-moz-keyframes rotateForward {
+from { -moz-transform: rotate(0deg); }
+to { -moz-transform: rotate(360deg); }
+}
+@-o-keyframes rotateForward {
+from { -o-transform: rotate(0deg); }
+to { -o-transform: rotate(360deg); }
+}
+
+@-webkit-keyframes rotateBack {
+from { -webkit-transform: rotate(360deg); }
+to { -webkit-transform: rotate(0deg); }
+}
+@-moz-keyframes rotateBack {
+from { -moz-transform: rotate(360deg); }
+to { -moz-transform: rotate(0deg); }
+}
+@-o-keyframes rotateBack {
+from { -o-transform: rotate(360deg); }
+to { -o-transform: rotate(0deg); }
+}
+
+/*_______________________________________Media Breakpoints*/
+
+@media screen and (max-width: 1400px) {
+	.hero {min-height: 30em;}
+}
+
+
+@media screen and (max-width: 760px) {
+	.icon-menu{display: block;float: right;font-size: 30px;color: # 74 F4B6;line - height: 1;text - shadow: none;border: solid 1 px;border - radius: 4 px;padding: 2 px;
+    }
+    .icon - menu::after {
+            content: "menu";font - size: 14 px;font - family: 'Amatic SC';display: block;text - align: center;letter - spacing: 2 px;padding - left: 5 % ;
+        }
+        .mainNav {
+            display: none;width: 100 % ;border - top: dotted 1 px #69626D;}
+	.mainNav ul li {padding: 0 3%;float: left; width: 30%;text-align: center;}
+  .flexBox {width: 100%;min-height: 20vh;padding-left: 0;display: block;}
+  .flexBox:nth-child(1){top: 0;left: 0;}
+  .flexBox:nth-child(2){left: 0;top: 20vh;}
+  .flexBox:nth-child(3){left: 0;top: 40vh;}
+  .fb_extended {min-height: 100vh;}
+  .flexBoxWrap {min-height: 60vh;}
+}
+
+@media screen and (max-width: 650px) {
+	.logo {width: 4%;padding: 4px 4% 0 4%;}
+	.mainHead {font-size: 34px;line-height: 1.6;}
+	.hero {min-height: 20em;}
+	.tag {font-size: 60px;top: 25%;left: 6%;text-shadow: 0px 1px 20px # 000;line - height: 1.2;
+        }
+        .heroBtn {
+            bottom: 10 % ;
+        }
+        .fbTitle {
+            font - size: 36 px;
+        }
+        .subTitle {
+            font - size: 50 px;
+            margin - top: 1 % ;
+        }
+        .flexBox: nth - child(2) p, .flexBox: nth - child(1) p, .flexBox: nth - child(3) p {
+            width: 90 % ;font - size: 18 px;
+        }
+        .contentBtn {
+            font - size: 22 px;
+            max - width: 50 % ;
+            padding: 1 % ;
+        }
+        .contentTitle {
+            font - size: 42 px;
+        }
+        .content {
+            width: 90 % ;margin: 5 % ;font - size: 18 px;
+        }
+        .siteFooter {
+            z - index: 99999;
+        }
+        .content p {
+            margin - bottom: 4 % ;
+        }
+}
